@@ -1,0 +1,235 @@
+
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcf9f9;
+    color: #020202;
+}
+
+/* En-tête */
+header  {
+       background: linear-gradient( to left, #d634a5, #2b05ff
+);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+ header nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+ header nav ul li{
+    display: inline;
+    margin: 0 10px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+      font-weight: 4000;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background 0.5s;
+      font-size: 30px;
+}
+header nav ul li a:hover{
+  background: #2b05ff;
+}
+
+
+/* Section des modèles */
+ 
+.car {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    background: linear-gradient( to left,#838181, #ffffff
+);
+    border: 1px solid #8b178f7c;;
+    border-radius: 5px;
+    width: 300px;
+     box-shadow: 0 02px 100px rgb(202, 18, 202);
+      transition: transform 0.3s;
+}
+   .car:hover {
+      transform: translateY(-5px) scale(1.1);
+    }
+
+.car img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.car h3 {
+    margin: 10px 0;
+    color: #000;
+}
+
+/* Pied de page */
+
+  footer {
+       background: linear-gradient( to left,#842cad, #2b05ff
+);
+      text-align: center;
+      padding: 30px 20px;
+      color: #7abaee;
+      margin-top: 60px;
+}
+.cars{
+  display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    background: linear-gradient( to left,#7a7679, #ffffff
+);
+    border: 1px solid #8b178f;
+    border-radius: 5px;
+    width: 300px;
+     box-shadow: 0 02px 100px rgb(142, 38, 151);
+      transition: transform 0.3s;
+}
+ .cars:hover {
+      transform: translateY(-5px) scale(1.1);
+    }
+ .cars img {
+    width: 100%;
+    border-radius: 6px;
+ }
+
+ .cars h3{
+      margin: 10px 0;
+    color: #000;}
+
+  .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+         animation: reveal linear 2s;
+      animation-timeline: view();
+      animation-range-start: cover 0%;
+      animation-range-end: cover 50%;
+    }
+
+    .section h3 {
+      font-size: 2rem;
+      color: #e31837;
+      margin-bottom: 10px;
+    }
+
+
+    .modelesx{
+       color: #fff;
+    text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 5px;
+      transition:   0.5s;
+         background: linear-gradient( to left,#970b97, #ff27f4);
+         transition: 2s;
+           margin: 0 10px;
+           max-width: 1000px;
+             font-size: 2rem;
+    }
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 10000; 
+}
+
+.couleur{
+   color: aqua;
+}
+.couleurs{
+   color: aqua;
+}
+.titre{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.header-logo {
+  height: 10px;
+  filter: drop-shadow(0 0 1px  #e31837) brightness(1) saturate(1.1);
+  transition: transform 0.3s ease;
+   display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    padding: 10px;
+    flex-wrap: wrap;
+    animation: logo infinite   1s;
+}
+
+
+@keyframes logo {
+    50%{
+    translate: 0 -8px;
+  }
+  50%{
+    translate: 0 8px;
+  }
+}
+
+
+.header-logo :hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+@media screen and (max-width: 1024px) {
+    .car, .cars {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+.header-logo img {
+    height: 190px;
+    width: 190px;
+}
+
+h1{
+  font-family: "Lobster", sans-serif;
+  font-weight: 4000;
+  font-style: normal;
+  font-size: 50px;
+}
+
+@keyframes reveal {
+  from{
+    transform: scale(0);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.whatsapp{
+  animation: whatsapp infinite 1s;
+  border-radius: 50%;
+  position: fixed;
+    max-width: 8%;  
+  height: auto; 
+bottom: 90px;
+right: 20px;
+  filter: drop-shadow(0 0 1px  #000000) brightness(1.2) saturate(10);
+  border: #000 solid 2px;
+}
+
+@keyframes whatsapp {
+    0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+}

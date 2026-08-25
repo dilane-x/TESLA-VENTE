@@ -20,11 +20,18 @@ header  {
  header nav ul{
     list-style: none;
     padding: 0;
+     display: flex;
+         justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
 }
 
  header nav ul li{
-    display: inline;
+    display: flex;
     margin: 0 10px;
+
 }
 header nav ul li a {
     color: #fff;
@@ -250,10 +257,14 @@ right: 20px;
 
 /* Écrans de Smartphones (moins de 600px) */
 @media screen and (max-width: 600px) {
-    header nav ul {
-        flex-direction: column;
-        gap: 8px;
-    }
+ header nav ul{
+     display: flex;
+         justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  gap: 0.1px;
+}
 
     header nav ul li a {
         font-size: 1rem;
@@ -274,7 +285,7 @@ right: 20px;
   animation: whatsapp infinite 1.9s;
   border-radius: 50%;
   position: fixed;
-    max-width: 12%;  
+    max-width: 14%;  
   height: auto; 
 bottom: 90px;
 right: 20px;

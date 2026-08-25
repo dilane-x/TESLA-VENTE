@@ -125,12 +125,10 @@ header nav ul li a:hover{
       font-weight: bold;
       padding: 10px;
       border-radius: 5px;
-      transition:   0.5s;
          background: linear-gradient( to left,#970b97, #ff27f4);
-         transition: 2s;
            margin: 0 10px;
-           max-width: 1000px;
              font-size: 2rem;
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
 #bg-video {
@@ -185,8 +183,8 @@ header nav ul li a:hover{
 
 @media screen and (max-width: 1024px) {
     .car, .cars {
-        width: 90%;
-        margin: 10px auto;
+        width: 80%;
+        margin: 20px auto;
     }
 }
 
@@ -214,10 +212,10 @@ h1{
 }
 
 .whatsapp{
-  animation: whatsapp infinite 1s;
+  animation: whatsapp infinite 1.9s;
   border-radius: 50%;
   position: fixed;
-    max-width: 8%;  
+    max-width: 6%;  
   height: auto; 
 bottom: 90px;
 right: 20px;
@@ -232,4 +230,93 @@ right: 20px;
   50%{
     transform: scale(1.1);
   }
+}
+
+
+
+
+
+/* Écrans de Tablettes (moins de 1024px) */
+@media screen and (max-width: 1024px) {
+    main {
+        gap: 20px;
+    }
+    
+    .car, .cars {
+        width: 45%; /* Affiche 2 cartes par ligne sur tablette */
+        margin: 20px auto;
+    }
+}
+
+/* Écrans de Smartphones (moins de 600px) */
+@media screen and (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    header nav ul li a {
+        font-size: 1.4rem;
+        width: 100%;
+    }
+
+    .car , .cars  {
+        width: 100%; /* Affiche 1 seule carte toute largeur sur mobile */
+        margin: 90px auto;
+    max-width: 80%;  
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+     box-shadow: 0 02px 50px rgb(142, 38, 151);
+    }
+
+.whatsapp{
+  animation: whatsapp infinite 1.9s;
+  border-radius: 50%;
+  position: fixed;
+    max-width: 8%;  
+  height: auto; 
+bottom: 90px;
+right: 20px;
+  filter: drop-shadow(0 0 1px  #000000) brightness(1.2) saturate(10);
+  border: #000 solid 2px;
+}
+
+
+    .section {
+        margin: 15px;
+        padding: 25px 15px;
+    }
+    h1{
+      font-size: 40px;
+    }
+        .modelesx{
+
+       color: #fff;
+    text-decoration: none;
+      padding: 10px;
+      border-radius: 5px;
+         background: linear-gradient( to left,#970b97, #ff27f4);
+           margin: 0 10px;
+             font-size: 1.5rem;
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .header-logo {
+  height: 10px;
+  filter: drop-shadow(0 0 1px  #8116be) brightness(1) saturate(0.8);
+  transition: transform 0.3s ease;
+   display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    animation: logo infinite   1s;
+    position: relative;
+    top: -40px;
+}
+.header-logo img {
+    height: auto;
+    max-width: 100px;
+}
 }
